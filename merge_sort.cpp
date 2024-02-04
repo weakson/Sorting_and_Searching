@@ -38,6 +38,4 @@ int main(){
 	inp = merge_sort (inp);
 
 	for (auto i : inp) cout << i << ' ';
-
-	return 0;
 }
