@@ -10,12 +10,12 @@ int main(){
     for (int i = 0; i < n; i++) cin >> arr[i];
     sort (arr, arr + n);
 
-    int l = 0, r = n;
+    int l = 0, r = n - 1;
 
-    while (l < r){
+    while (l <= r){
         int mid = (l + r) / 2;
         if (arr[mid] > target){
-            r = mid;
+            r = mid - 1;
         }
         else if (arr[mid] < target){
             l = mid + 1;
